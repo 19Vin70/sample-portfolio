@@ -10,10 +10,9 @@
 }
 
 .container {
-    background: url('../image/bg.png');
+    background: url('../image/shoto.webp') no-repeat center;
+    background-attachment: fixed;
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     height: 100vh;
 }
 
@@ -140,8 +139,50 @@ section {
     margin-top: 20px;
 }
 
+/* Service Section */
 
+.services {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 30px;
+}
 
+.services .card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: #333;
+    padding: 30px 20px;
+    border-radius: 20px;
+}
+
+.services .card .description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services .card .description h2 {
+    font-size: 23px;
+    color: #fff;
+}
+
+.services .card .description p {
+    font-size: 18px;
+    color: #fff;
+    margin: 20px 0;
+}
+
+.services .card .btn {
+    background: #adadad;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
 
 
@@ -188,6 +229,10 @@ section {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+
+    .services {
+        flex-wrap: wrap;
     }
 }
 
