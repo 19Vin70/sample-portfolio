@@ -6,24 +6,40 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
+    scroll-behavior: smooth;
 }
 
 .container {
-    background: #000;
+    background: url('../image/bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     height: 100vh;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
+section {
+    min-height: 100vh;
+    padding: 3rem 9%;
+}
+
 .header {
+    position: fixed;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background: #333;
     padding: 10px 30px;
-    height: 70px;
+    height: 80px;
+    z-index: 999;
 }
 
 .header .logo {
-    font-size: 28px;
+    font-size: 25px;
     color: #fff;
     text-transform: uppercase;
     font-weight: 600;
@@ -50,6 +66,92 @@
 .header .navbar a:hover {
     color: #adadad;
 }
+
+
+/* Home section */
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.home .home-content {
+    position: relative;
+}
+
+.home .home-content h2 {
+    font-size: 43px;
+    color: #fff;
+}
+
+.home .home-content h1 {
+    font-size: 60px;
+    color: #fff;
+}
+
+.home .home-content h3 {
+    font-size: 33px;
+    color: #fff;
+}
+
+.home img {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+}
+
+
+/* About Section */
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    background: #000;
+}
+
+.about img {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+}
+
+.about .about-content {
+    width: 500px;
+    position: relative;
+}
+
+.about .about-content h2 {
+    font-size: 33px;
+    color: #fff;
+}
+
+.about .about-content h2 span {
+    color: #adadad;
+    font-size: 38px;
+}
+
+.about .about-content p {
+    font-size: 20px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
